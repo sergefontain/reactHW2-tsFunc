@@ -1,17 +1,17 @@
-import React from "react"
+import React, { FC } from "react"
 
 type Props = {
     value: number
     id: string
 }
 
-const StatsCounter = (props: any) => {
-    const handleFollowers = ({ value, id }: Props) => {
+const StatsCounter: FC<Props> = (props) => {
+    const handleFollowers = ({ value, id }:Props) => {
         if (id === "Followers") {
             return [value, id]
         }
     }
-    const handleFollowing = ({ value, id }: Props) => {
+    const handleFollowing = ({ value, id }:Props) => {
         if (id === "Following") {
             return [value, id]
         }
@@ -29,4 +29,3 @@ const StatsCounter = (props: any) => {
 }
 
 export default StatsCounter
-

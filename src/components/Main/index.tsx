@@ -6,7 +6,7 @@ import "./Main.css"
 const Main = () => {
     return (
         <main id="main">
-            <div class="container">
+            <div className="container">
                 <UserTab />
                 <ModalPic />
             </div>

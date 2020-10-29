@@ -8,7 +8,7 @@ import "./UserTab.css"
 const UserTab = () => {
     return (
         <div id="userProfileTab">
-            <div class="container">
+            <div className="container">
                 <UserName />
                 <Separator />
                 <UserPic />
